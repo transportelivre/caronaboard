@@ -62,7 +62,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>19:00 a 20:00</td>
-							<td>Luis Mizutani</td>
+							<td>Mizutani</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/Jt7rddWqFn" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -76,7 +76,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>18:00 a 19:00</td>
-							<td>Andréa Aranda</td>
+							<td>Andréa</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/3zFqZS1SvR" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -90,7 +90,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>19:00</td>
-							<td>Marcelo Schmidt</td>
+							<td>Jefferson</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/dbR9YM963H" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -104,7 +104,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>19:00 a 20:00</td>
-							<td>Marcelo Schmidt</td>
+							<td>Marcelo</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/hyGj1rx26x" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -118,7 +118,7 @@
 							</td>
 							<td>Seg, Qua</td>
 							<td>18:00 a 19:00</td>
-							<td>Fernanda Martins</td>
+							<td>Fernanda</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/iKCKMbnNX3" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -132,7 +132,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>Sob consulta</td>
-							<td>Marcelo Schmidt</td>
+							<td>Rodrigo & Marcus</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/yezpR5lzGY" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 					</tbody> 
