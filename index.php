@@ -49,7 +49,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>19:00</td>
-							<td>Jordana</td>
+							<td>Jordana Seelig</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/TQAKwXzAg3" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -77,7 +77,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>19:00 a 20:00</td>
-							<td>Mizutani</td>
+							<td>Luis Mizutani</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/Jt7rddWqFn" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -105,7 +105,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>18:00 a 19:00</td>
-							<td>Andréa</td>
+							<td>Andréa Aranda</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/3zFqZS1SvR" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -119,7 +119,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>Ida para PUC(8h00) - Volta, depende do dia (consultar)</td>
-							<td>Mayra</td>
+							<td>Mayra Rodrigues</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/h8wRZf9hje" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -133,7 +133,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>19:00</td>
-							<td>Jefferson</td>
+							<td>Jefferson Stachelsky</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/dbR9YM963H" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -147,7 +147,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>19:00 a 20:00</td>
-							<td>Marcelo</td>
+							<td>Marcelo Schmidt</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/hyGj1rx26x" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -175,7 +175,7 @@
 							</td>
 							<td>Seg, Qua</td>
 							<td>18:00 a 19:00</td>
-							<td>Fernanda</td>
+							<td>Fernanda Martins</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/iKCKMbnNX3" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
