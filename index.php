@@ -103,7 +103,7 @@
 								</ol>
 								<p class="depende">(*)Rota flexível? Não</p>
 							</td>
-							<td>Seg a Sex</td>
+							<td>Ter a Sex</td>
 							<td>19:00</td>
 							<td>Marcelo Vargas</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/yIVHABCEkV" target="_blank">QUERO CARONA!</a></div></td>
@@ -113,13 +113,13 @@
 							<td>
 								<ol id="passos">
 							    	<li>Origem: Tecnopuc</li>
-							        <li>Destino: Lima e Silva</li>
+							        <li>Destino: Lima e Silva / República</li>
 								</ol>
 								<p class="depende">(*)Rota flexível? falar c/ motorista</p>
 							</td>
 							<td>Seg a Sex</td>
 							<td>18:00 a 19:00</td>
-							<td>Andréa Aranda</td>
+							<td>Andréa Aranda & Letícia Rosa</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/3zFqZS1SvR" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -175,7 +175,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>9:00</td>
-							<td>Alexandre</td>
+							<td>Alexandre Goedert</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/dF11ctBlBT" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
@@ -189,7 +189,7 @@
 							</td>
 							<td>Seg a Sex</td>
 							<td>Sob consulta</td>
-							<td>Rodrigo & Marcus</td>
+							<td>Rodrigo duarte & Marcus Rodrigues</td>
 							<td><div id="button_carona"><a href="http://goo.gl/forms/yezpR5lzGY" target="_blank">QUERO CARONA!</a></div></td>
 						</tr>
 						<tr>
