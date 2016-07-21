@@ -1,15 +1,16 @@
 const express = require('express');
+const session = require('express-session');
 const logger = require('../utils/logger');
 const path = require('path');
 const querystring = require('querystring');
 const OKTA_CONFIG = require('./okta-config');
+const SERVER_CONFIG = require('./server-config');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
-
+const morgan = require('morgan');
 
 const startExpressServer = (PORT) => {
   const app = express();
-  //app.use(express.cookieParser());
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: false }));
   app.use(session({ secret: SERVER_CONFIG.sessionSecret,
@@ -40,13 +41,9 @@ const startExpressServer = (PORT) => {
       });
       const encodedURI = `${OKTA_CONFIG.OKTA_BASE_URL}/oauth2/v1/authorize?${params}`;
       res.redirect(encodedURI);
+    } else {
+      next();
     }
-  });
-
-  app.post('/login/callback', (req, res) => {
-    const token = req.body.id_token;
-    const dirtyToken = jwt.decode(token, {complete:true});
-    res.send(`seus dados: ${JSON.stringify(dirtyToken, null, 4)}`);
   });
 
   app.get('/', (req, res) => {

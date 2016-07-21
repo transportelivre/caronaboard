@@ -5,9 +5,9 @@ const PROD = process.env.NODE_ENV === 'production';
 logger.logSuccess('Environment', process.env.NODE_ENV);
 
 if(PROD) {
-  const expressServer = require('./express/server');
-  expressServer(PORT);
+  const startExpressServer = require('./express/server');
+  startExpressServer(PORT);
 } else {
-  const webpackServer = require('./webpack/server');
-  webpackServer(PORT - 1);
+  const startWebpackServer = require('./webpack/server');
+  startWebpackServer(PORT - 1);
 }

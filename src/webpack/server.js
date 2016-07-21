@@ -3,7 +3,7 @@ const WebpackDevServer = require('webpack-dev-server');
 const logger = require('../utils/logger');
 const config = require('../../webpack/webpack.config.js');
 
-const startWebpackServer = function (PORT) {
+const startWebpackServer = (PORT) => {
   const server = new WebpackDevServer(webpack(config), {
      historyApiFallback: true,
      hot: true,
