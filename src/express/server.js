@@ -24,6 +24,7 @@ const startExpressServer = (PORT) => {
 
     // need to validate token before setting user to session here
     // const verifiedToken = jwt.verify(token, OKTA_CONFIG.OKTA_PUBLIC_KEYS, {algorithms: ['RS256']});
+
     req.session.user = dirtyToken.email;
     res.redirect('/');
   });
