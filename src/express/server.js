@@ -13,7 +13,7 @@ const startExpressServer = (PORT) => {
   const app = express();
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: false }));
-  app.use(session({ secret: SERVER_CONFIG.sessionSecret,
+  app.use(session({ secret: SERVER_CONFIG.SESSION_SECRET,
                     resave: true,
                     saveUninitialized: false }));
   app.use(morgan('combined'));

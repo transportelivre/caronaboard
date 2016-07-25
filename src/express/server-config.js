@@ -1,5 +1,3 @@
-// Env variable this later on
-
 module.exports = {
-  sessionSecret: 'my secret'
+  SESSION_SECRET: process.env.SESSION_SECRET || '<my secret>'
 };
