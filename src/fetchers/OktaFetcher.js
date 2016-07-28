@@ -1,4 +1,4 @@
-import OKTA_CONFIG from '../express/okta-config';
+import {OKTA_CONFIG} from '../express/config';
 
 export default class OktaFetcher {
 

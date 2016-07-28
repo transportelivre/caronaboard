@@ -1,5 +1,5 @@
 import OktaFetcher from '../../src/fetchers/OktaFetcher';
-import OKTA_CONFIG from '../../src/express/okta-config';
+import {OKTA_CONFIG} from '../../src/express/config';
 import sinon from 'sinon';
 import {expect} from 'chai';
 
