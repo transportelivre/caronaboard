@@ -4,13 +4,14 @@
   "description": "Social ride network",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production node ./src/main-server",
+    "start": "NODE_ENV=production node --exec babel-node ./src/main-server",
+    "nodemon": "nodemon ./src/main-server --exec babel-node",
     "postinstall": "npm run build",
     "dev-server": "NODE_ENV=development node ./src/main-server",
     "build": "npm run clean && webpack --config ./webpack/webpack.config.js",
     "clean": "rm -rf ./build",
-    "lint": "eslint ./src --ext .js --ext .jsx --cache",
-    "test": "NODE_ENV=test mocha --compilers js:babel-core/register,.:mocha-image-compiler --recursive --check-leaks --full-trace ./src/**/*-spec.js",
+    "lint": "eslint . --ext .js --ext .jsx --cache",
+    "test": "NODE_ENV=test mocha --compilers js:babel-core/register,.:mocha-image-compiler --recursive --check-leaks --full-trace ./src/**/*-spec.js ./test/**/*.js",
     "ci": "npm run lint && npm run test"
   },
   "repository": {
@@ -51,6 +52,7 @@
     "react": "^15.0.1",
     "react-bootstrap": "^0.29.4",
     "react-dom": "^15.0.1",
+    "request-promise": "^4.0.2",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
