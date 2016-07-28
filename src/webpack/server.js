@@ -1,7 +1,7 @@
-const webpack = require('webpack');
-const WebpackDevServer = require('webpack-dev-server');
-const logger = require('../utils/logger');
-const config = require('../../webpack/webpack.config.js');
+import webpack from 'webpack';
+import WebpackDevServer from 'webpack-dev-server';
+import logger from '../utils/logger';
+import config from '../../webpack/webpack.config.js';
 
 const startWebpackServer = (PORT) => {
   const server = new WebpackDevServer(webpack(config), {
@@ -17,4 +17,4 @@ const startWebpackServer = (PORT) => {
   logger.logSuccess('webpack server started', `http://localhost:${PORT}`);
 };
 
-module.exports = startWebpackServer;
+export default startWebpackServer;

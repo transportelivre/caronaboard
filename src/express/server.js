@@ -1,16 +1,16 @@
-const express = require('express');
-const session = require('express-session');
-const logger = require('../utils/logger');
-const path = require('path');
-const querystring = require('querystring');
-const OKTA_CONFIG = require('./okta-config');
-const SERVER_CONFIG = require('./server-config');
-const bodyParser = require('body-parser');
-const jwt = require('jsonwebtoken');
-const morgan = require('morgan');
-const FEATURES = require('../features');
+import express from 'express';
+import session from 'express-session';
+import logger from '../utils/logger';
+import path from 'path';
+import querystring from 'querystring';
+import OKTA_CONFIG from './okta-config';
+import SERVER_CONFIG from './server-config';
+import bodyParser from 'body-parser';
+import jwt from 'jsonwebtoken';
+import morgan from 'morgan';
+import FEATURES from '../features';
 
-const startExpressServer = (PORT) => {
+const startExpressServer = (oktaFetcher, PORT) => {
   const app = express();
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: false }));
@@ -18,15 +18,14 @@ const startExpressServer = (PORT) => {
                     resave: true,
                     saveUninitialized: false }));
   app.use(morgan('combined'));
+
   if(JSON.parse(FEATURES.OKTA_INTEGRATION)) {
     app.post('/login/callback', (req, res) => {
       const token = req.body.id_token;
-      const dirtyToken = jwt.decode(token, OKTA_CONFIG.OKTA_PUBLIC_KEYS);
-
+      const dirtyToken = jwt.decode(token, {complete: true});
       // need to validate token before setting user to session here
       // const verifiedToken = jwt.verify(token, OKTA_CONFIG.OKTA_PUBLIC_KEYS, {algorithms: ['RS256']});
-
-      req.session.user = dirtyToken.email;
+      req.session.user = dirtyToken.payload.email;
       res.redirect('/');
     });
 
@@ -65,4 +64,4 @@ const startExpressServer = (PORT) => {
 
 };
 
-module.exports = startExpressServer;
+export default startExpressServer;
